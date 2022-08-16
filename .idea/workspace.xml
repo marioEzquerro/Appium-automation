@@ -5,14 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f864ebb-70b1-4a0e-b89e-c157c094c0ab" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/example.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/barify/setups/Capabilities.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/barify/stepsdef/example.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/barify/manager/AppiumServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/barify/pages/AbstractPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/barify/pages/PagesFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/barify/pages/examplePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/barify/runner/CucumberRunnerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/barify/stepsdef/exampleSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/barify/utils/MyFluentWait.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/barify/utils/Utilities.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/example.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/example.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/example.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/barify/setups/Capabilities.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/barify/stepsdef/example.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +39,13 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="workOffline" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="2DAETf4QHZWJYwxfVwnVEXYfhR8" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -44,15 +58,32 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "project.structure.last.edited": "Modules",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/mario/IntelliJ/barify/src/test/java/com/barify",
+    "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "File.Encoding"
+    "project.structure.side.proportion": "0.27701148",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\mario\IntelliJ\barify\src\test\java\com\barify" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\mario\IntelliJ\barify\src\main\resources\features" />
       <recent name="C:\mario\IntelliJ\Barify\src\main\resources" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.barify" />
+      <recent name="" />
+      <recent name="com" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.barify.pages" />
+      <recent name="com.barify.runner" />
+      <recent name="com.barify.manager" />
+      <recent name="stepsdef" />
     </key>
   </component>
   <component name="RunAnythingCache">
