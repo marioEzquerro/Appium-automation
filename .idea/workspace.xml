@@ -4,21 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f864ebb-70b1-4a0e-b89e-c157c094c0ab" name="Changes" comment="Funciona">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/stepsdef/LoginSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/xpaths/LoginPaths.java" afterDir="false" />
+    <list default="true" id="9f864ebb-70b1-4a0e-b89e-c157c094c0ab" name="Changes" comment="Changes">
+      <change afterPath="$PROJECT_DIR$/apk/rva-1.0.0-b2.apk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/features/example.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/barify/manager/AppiumServer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/barify/pages/AbstractPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/barify/pages/PagesFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/barify/pages/examplePage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/barify/runner/CucumberRunnerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/barify/stepsdef/exampleSteps.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/barify/utils/MyFluentWait.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/barify/utils/Utilities.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/example.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/example.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +22,19 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="origin/master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="saucelabs" />
@@ -58,20 +60,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/mario/IntelliJ/barify/src/test/java/com/barify&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.27701148&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/mario/IntelliJ Proyects/saucelabs-demo/apk",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.27701148",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\mario\IntelliJ Proyects\saucelabs-demo\apk" />
       <recent name="C:\mario\IntelliJ\barify\src\test\java\com\barify" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -133,6 +136,14 @@
       <option name="presentableId" value="Default" />
       <updated>1660133501927</updated>
     </task>
+    <task id="LOCAL-00001" summary="Changes">
+      <created>1662979996627</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1662979996627</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -145,6 +156,25 @@
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/master" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -152,6 +182,10 @@
         <breakpoint enabled="true" type="java-exception">
           <properties class="net.masterthought.cucumber.ValidationException" package="net.masterthought.cucumber" />
           <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="io.cucumber.core.exception.CompositeCucumberException" package="io.cucumber.core.exception" />
+          <option name="timeStamp" value="2" />
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -1,0 +1,255 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -4,22 +4,14 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="9f864ebb-70b1-4a0e-b89e-c157c094c0ab" name="Changes" comment="">
+-      <change afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/pages/LoginPage.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/stepsdef/loginSteps.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/support/Hooks.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/xpaths/loginPaths.java" afterDir="false" />
++    <list default="true" id="9f864ebb-70b1-4a0e-b89e-c157c094c0ab" name="Changes" comment="Funciona">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/features/example.feature" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/com/barify/manager/AppiumServer.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/com/barify/pages/AbstractPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/pages/AbstractPage.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/com/barify/pages/PagesFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/pages/PagesFactory.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/com/barify/pages/examplePage.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/com/barify/runner/CucumberRunnerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/runner/CucumberRunnerTest.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/com/barify/stepsdef/exampleSteps.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/com/barify/utils/MyFluentWait.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/utils/MyFluentWait.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/com/barify/utils/Utilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/utils/Utilities.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/pages/AbstractPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/pages/AbstractPage.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/pages/LoginPage.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/pages/PagesFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/pages/PagesFactory.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/runner/CucumberRunnerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/runner/CucumberRunnerTest.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/stepsdef/loginSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/stepsdef/LoginSteps.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/java/com/saucelabs/xpaths/loginPaths.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/xpaths/LoginPaths.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/test/resources/features/example.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/example.feature" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+@@ -161,6 +153,14 @@
+       <option name="presentableId" value="Default" />
+       <updated>1660133501927</updated>
+     </task>
++    <task id="LOCAL-00001" summary="Funciona">
++      <created>1662040942347</created>
++      <option name="number" value="00001" />
++      <option name="presentableId" value="LOCAL-00001" />
++      <option name="project" value="LOCAL" />
++      <updated>1662040942347</updated>
++    </task>
++    <option name="localTasksCounter" value="2" />
+     <servers />
+   </component>
+   <component name="Vcs.Log.Tabs.Properties">
+@@ -173,6 +173,10 @@
+         </entry>
+       </map>
+     </option>
++  </component>
++  <component name="VcsManagerConfiguration">
++    <MESSAGE value="Funciona" />
++    <option name="LAST_COMMIT_MESSAGE" value="Funciona" />
+   </component>
+   <component name="XDebuggerManager">
+     <breakpoint-manager>
+Index: src/test/java/com/saucelabs/pages/PagesFactory.java
+===================================================================
+diff --git a/src/test/java/com/saucelabs/pages/PagesFactory.java b/src/test/java/com/saucelabs/pages/PagesFactory.java
+--- a/src/test/java/com/saucelabs/pages/PagesFactory.java	
++++ b/src/test/java/com/saucelabs/pages/PagesFactory.java	
+@@ -1,7 +1,5 @@
+ package com.saucelabs.pages;
+ 
+-import io.appium.java_client.android.AndroidDriver;
+-import io.appium.java_client.android.AndroidElement;
+ import lombok.Getter;
+ import org.openqa.selenium.WebDriver;
+ 
+@@ -9,15 +7,15 @@
+ public class PagesFactory {
+ 
+     private static PagesFactory pagesFactories;
+-    private final AndroidDriver driver;
++    private final WebDriver driver;
+     private final LoginPage loginPage;
+ 
+-    public PagesFactory(AndroidDriver driver) {
++    public PagesFactory(WebDriver driver) {
+         this.driver = driver;
+         loginPage = new LoginPage(driver);
+     }
+ 
+-    public static PagesFactory start(AndroidDriver driver) {
++    public static PagesFactory start(WebDriver driver) {
+         pagesFactories = new PagesFactory(driver);
+         return pagesFactories;
+     }
+Index: src/test/java/com/saucelabs/pages/LoginPage.java
+===================================================================
+diff --git a/src/test/java/com/saucelabs/pages/LoginPage.java b/src/test/java/com/saucelabs/pages/LoginPage.java
+--- a/src/test/java/com/saucelabs/pages/LoginPage.java	
++++ b/src/test/java/com/saucelabs/pages/LoginPage.java	
+@@ -1,15 +1,14 @@
+ package com.saucelabs.pages;
+ 
+-import com.saucelabs.xpaths.loginPaths;
+-import io.appium.java_client.android.AndroidDriver;
+-import io.appium.java_client.android.AndroidElement;
++import com.saucelabs.xpaths.LoginPaths;
++import org.openqa.selenium.WebDriver;
+ import org.openqa.selenium.WebElement;
+ import org.openqa.selenium.support.FindBy;
+ import org.openqa.selenium.support.PageFactory;
+ 
+ public class LoginPage extends AbstractPage {
+ 
+-    public LoginPage(AndroidDriver driver) {
++    public LoginPage(WebDriver driver) {
+         super(driver);
+         PageFactory.initElements(driver, this);
+     }
+@@ -35,10 +34,10 @@
+     @FindBy(id = "tv_sign_in_click_here")
+     private WebElement recuperarContrasena;
+ 
+-    @FindBy(xpath = loginPaths.ALERTA_EMAIL)
++    @FindBy(xpath = LoginPaths.ALERTA_EMAIL)
+     private WebElement emailAlert;
+ 
+-    @FindBy(xpath = loginPaths.ALERTA_PASSWORD)
++    @FindBy(xpath = LoginPaths.ALERTA_PASSWORD)
+     private WebElement passwordAlert;
+ 
+     @FindBy(id = "message")
+Index: src/test/java/com/saucelabs/stepsdef/loginSteps.java
+===================================================================
+diff --git a/src/test/java/com/saucelabs/stepsdef/loginSteps.java b/src/test/java/com/saucelabs/stepsdef/LoginSteps.java
+rename from src/test/java/com/saucelabs/stepsdef/loginSteps.java
+rename to src/test/java/com/saucelabs/stepsdef/LoginSteps.java
+--- a/src/test/java/com/saucelabs/stepsdef/loginSteps.java	
++++ b/src/test/java/com/saucelabs/stepsdef/LoginSteps.java	
+@@ -10,12 +10,12 @@
+ import org.junit.Assert;
+ 
+ @Slf4j
+-public class loginSteps {
++public class LoginSteps {
+ 
+     public static final String PAGE_URL = "com.hiberus.mobile.android.rva.app.splash.SplashActivity";
+-    private final LoginPage loginPage;
++    private LoginPage loginPage;
+ 
+-    public loginSteps() {
++    public LoginSteps() {
+         loginPage = PagesFactory.getInstance().getLoginPage();
+     }
+ 
+Index: src/test/java/com/saucelabs/pages/AbstractPage.java
+===================================================================
+diff --git a/src/test/java/com/saucelabs/pages/AbstractPage.java b/src/test/java/com/saucelabs/pages/AbstractPage.java
+--- a/src/test/java/com/saucelabs/pages/AbstractPage.java	
++++ b/src/test/java/com/saucelabs/pages/AbstractPage.java	
+@@ -1,8 +1,8 @@
+ package com.saucelabs.pages;
+ 
+ import com.saucelabs.utils.MyFluentWait;
++import io.appium.java_client.PerformsTouchActions;
+ import io.appium.java_client.TouchAction;
+-import io.appium.java_client.android.AndroidDriver;
+ import io.appium.java_client.touch.WaitOptions;
+ import io.appium.java_client.touch.offset.PointOption;
+ import lombok.extern.slf4j.Slf4j;
+@@ -17,10 +17,10 @@
+ 
+ @Slf4j
+ public abstract class AbstractPage {
+-    protected MyFluentWait<AndroidDriver> wait;
+-    private final AndroidDriver driver;
++    protected MyFluentWait<WebDriver> wait;
++    private final WebDriver driver;
+ 
+-    AbstractPage(AndroidDriver driver) {
++    AbstractPage(WebDriver driver) {
+         this.driver = driver;
+         wait = new MyFluentWait<>(driver)
+                 .withTimeout(20, ChronoUnit.SECONDS)
+@@ -34,11 +34,11 @@
+         return driver;
+     }
+ 
+-    protected Wait<AndroidDriver> getWait() {
++    protected Wait<WebDriver> getWait() {
+         return wait;
+     }
+ 
+-    protected void setWait(MyFluentWait<AndroidDriver> wait) {
++    protected void setWait(MyFluentWait<WebDriver> wait) {
+         this.wait = wait;
+     }
+ 
+@@ -65,7 +65,7 @@
+             int end_y = (int) (dimension.height * 0.6);*/
+     protected void scroll(int startX, int startY, int endX, int endY) {
+         getDriver().manage().timeouts().implicitlyWait(250, TimeUnit.MILLISECONDS);
+-        TouchAction action = new TouchAction((AndroidDriver) getDriver());
++        TouchAction action = new TouchAction((PerformsTouchActions) getDriver());
+ 
+         action.press(PointOption.point(startX, startY))
+                 .waitAction(WaitOptions.waitOptions(Duration.ofSeconds(1)))
+@@ -83,7 +83,7 @@
+         int end_x = (int) (dimension.width * 0.5);
+         int end_y = (int) (dimension.height * 0.6);
+ 
+-        TouchAction action = new TouchAction((AndroidDriver) getDriver());
++        TouchAction action = new TouchAction((WebDriver) getDriver());
+ 
+         action.press(PointOption.point(start_x, start_y))
+                 .waitAction(WaitOptions.waitOptions(Duration.ofSeconds(1)))
+@@ -99,7 +99,7 @@
+         int end_x = (int) (dimension.width * 0.5);
+         int end_y = (int) (dimension.height * 0.2);
+ 
+-        TouchAction action = new TouchAction((AndroidDriver) getDriver());
++        TouchAction action = new TouchAction((WebDriver) getDriver());
+ 
+         action.press(PointOption.point(start_x, start_y))
+                 .waitAction(WaitOptions.waitOptions(Duration.ofSeconds(1)))
+Index: src/test/java/com/saucelabs/runner/CucumberRunnerTest.java
+===================================================================
+diff --git a/src/test/java/com/saucelabs/runner/CucumberRunnerTest.java b/src/test/java/com/saucelabs/runner/CucumberRunnerTest.java
+--- a/src/test/java/com/saucelabs/runner/CucumberRunnerTest.java	
++++ b/src/test/java/com/saucelabs/runner/CucumberRunnerTest.java	
+@@ -17,7 +17,7 @@
+                 "com.saucelabs.support"
+         },
+         features = {
+-                "src/test/resources/features/"
++                "src/test/resources/features"
+         }
+ )
+ public class CucumberRunnerTest {
+Index: src/test/java/com/saucelabs/xpaths/loginPaths.java
+===================================================================
+diff --git a/src/test/java/com/saucelabs/xpaths/loginPaths.java b/src/test/java/com/saucelabs/xpaths/LoginPaths.java
+rename from src/test/java/com/saucelabs/xpaths/loginPaths.java
+rename to src/test/java/com/saucelabs/xpaths/LoginPaths.java
+--- a/src/test/java/com/saucelabs/xpaths/loginPaths.java	
++++ b/src/test/java/com/saucelabs/xpaths/LoginPaths.java	
+@@ -1,6 +1,6 @@
+ package com.saucelabs.xpaths;
+ 
+-public class loginPaths {
++public class LoginPaths {
+ 
+     public static final String ALERTA_EMAIL = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.RelativeLayout/android.widget.LinearLayout[1]/android.widget.LinearLayout/android.widget.FrameLayout";
+     public static final String ALERTA_PASSWORD = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.RelativeLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.FrameLayout";
