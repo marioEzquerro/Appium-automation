@@ -4,22 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f864ebb-70b1-4a0e-b89e-c157c094c0ab" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/barify/manager/AppiumServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/barify/pages/AbstractPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/barify/pages/PagesFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/barify/pages/examplePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/barify/runner/CucumberRunnerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/barify/stepsdef/exampleSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/barify/utils/MyFluentWait.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/barify/utils/Utilities.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/example.feature" afterDir="false" />
+    <list default="true" id="9f864ebb-70b1-4a0e-b89e-c157c094c0ab" name="Changes" comment="Funciona">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/stepsdef/LoginSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/saucelabs/xpaths/LoginPaths.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/example.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/example.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/barify/setups/Capabilities.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/barify/stepsdef/example.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/features/example.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/barify/manager/AppiumServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/barify/pages/AbstractPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/barify/pages/PagesFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/barify/pages/examplePage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/barify/runner/CucumberRunnerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/barify/stepsdef/exampleSteps.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/barify/utils/MyFluentWait.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/barify/utils/Utilities.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/example.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/example.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +33,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="saucelabs" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -54,18 +58,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/mario/IntelliJ/barify/src/test/java/com/barify",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.27701148",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/mario/IntelliJ/barify/src/test/java/com/barify&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.27701148&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\mario\IntelliJ\barify\src\test\java\com\barify" />
@@ -89,8 +93,36 @@
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn clean" />
+      <command value="mvn clean install -U" />
       <command value="mvn clean install" />
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Scenario: Inicio de sesion con credenciales validos" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/example.feature" />
+      <option name="GLUE" value="com.saucelabs.stepsdef com.saucelabs.support" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="saucelabs-demo" />
+      <option name="NAME_FILTER" value="^Inicio de sesion con credenciales validos$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Inicio de sesion con credenciales validos$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Inicio de sesion con credenciales validos" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Cucumber Java.Scenario: Inicio de sesion con credenciales validos" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -113,5 +145,15 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="net.masterthought.cucumber.ValidationException" package="net.masterthought.cucumber" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
